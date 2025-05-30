@@ -11,7 +11,7 @@
 }
 
 .blog_item {
-  width: calc((100% - 2 * 25px) / 3);
+  width: calc((100% - 50px) / 3);
 }
 
 .blog_item + .blog_item {
@@ -33,12 +33,6 @@
 }
 
 .blog_img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   transition: scale 0.25s ease;
 }
 

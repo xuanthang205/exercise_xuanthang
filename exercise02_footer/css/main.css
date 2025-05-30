@@ -20,7 +20,7 @@
 }
 
 .footer_wrap .desc {
-  width: 49%;
+  max-width: 260px;
   margin-top: 25px;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
@@ -201,7 +201,7 @@
   }
 
   .footer_wrap .desc {
-    width: 100%;
+    max-width: 100%;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -274,11 +274,12 @@
     background-size: 226px 51px;
     background-position: -76px -26px;
     transition: rotate 0.3s ease;
+    rotate: 180deg;
     content: '';
   }
 
   .footer_wrap .col:not(:last-child) .title.is_show::after {
-    rotate: 180deg;
+    rotate: 0deg;
   }
 
   .copyright_wrap,

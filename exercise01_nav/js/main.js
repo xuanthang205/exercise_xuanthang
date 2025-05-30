@@ -4,7 +4,7 @@ const closeBtn = document.querySelector('.header .close_btn');
 const main = document.querySelector('.main');
 const dimmed = document.querySelector('.dimmed');
 const body = document.body;
-// Hàm đóng menu
+// Function close menu
 function closeMenu() {
   Object.assign(header.style, {
     transform: 'translateX(-100%)',
@@ -21,7 +21,7 @@ function closeMenu() {
   }, 300);
   dimmed.classList.remove('is_show');
 }
-// Hàm gỡ class is_show
+// Function remove class is_show
 function removeIsShowOnLargeScreen(...elements) {
   function handleResize() {
     if (window.innerWidth > 768) {
@@ -30,7 +30,6 @@ function removeIsShowOnLargeScreen(...elements) {
       main.style.margin = '';
     }
   }
-
   handleResize();
   window.addEventListener('resize', handleResize);
 }

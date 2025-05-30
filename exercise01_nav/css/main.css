@@ -213,15 +213,16 @@
     width: 100%;
     height: 1px;
     background-color: #e8ecef;
+    pointer-events: none;
     content: '';
   }
 
-  .header.is_show .nav_link::after{
+  .header.is_show .nav_link::after {
     bottom: -6px;
   }
 
-  .header.is_show .action_link::after{
-    bottom: -4px;
+  .header.is_show .action_link::after {
+    bottom: -8px;
   }
 
   .header.is_show .action_list {
@@ -239,8 +240,11 @@
   .header.is_show .action_link {
     position: relative;
     width: 100%;
-    margin-top: 8px;
-    padding: 4px 0;
+    padding: 0;
+  }
+
+  .header.is_show .action_item + .action_item {
+    margin-top: 16px;
   }
 
   .header.is_show .title {
@@ -256,14 +260,14 @@
   .header.is_show .btn_signin {
     --height: 52px;
     display: block;
-    margin-top: 30.33px;
+    margin-top: 35px;
     border-radius: 6px;
     font-size: 18px;
   }
 
   .header.is_show .social_list {
     display: flex;
-    margin-top: 13.33px;
+    margin-top: 13px;
   }
   /* // Header */
 }
