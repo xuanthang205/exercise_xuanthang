@@ -85,7 +85,7 @@
   position: absolute;
   left: 50%;
   bottom: 16px;
-  min-width: 230px;
+  width: calc(100% - 32px);
   transform: translate(-50%, 150%);
   transition: transform 0.25s ease;
 }
@@ -193,17 +193,16 @@
     margin-top: 40px;
   }
 
-  .product_img_wrap{
+  .product_img_wrap {
     padding-top: 133.333%;
   }
 
   .product .add_btn {
-    --height: 41px;
     bottom: 14px;
-    min-width: 203px;
-}
+    width: calc(100% - 28px);
+  }
 
-  .product_slides{
+  .product_slides {
     padding-bottom: 43px;
   }
 }

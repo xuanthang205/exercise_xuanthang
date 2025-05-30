@@ -16,7 +16,7 @@ ratings.forEach((input, index) => {
   // Capture event when user changes
   input.addEventListener('input',() => {
     updateRatingValue(input);
-    localStorage.setItem(key, input.value); // Lưu lại giá trị
+    localStorage.setItem(key, input.value); // Save value
   });
 });
 
