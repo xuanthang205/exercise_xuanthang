@@ -18,6 +18,17 @@
   margin-left: 25px;
 }
 
+.blog_item .more_link{
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.blog_box{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .blog_link {
   display: block;
 }
@@ -37,15 +48,17 @@
 }
 
 .blog_title {
-  margin: 24px 0 9px;
+  display: -webkit-box;
   overflow: hidden;
+  margin: 24px 0 9px;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 20px;
-  white-space: nowrap;  
-  text-overflow: ellipsis;
   color: #23262f;
   line-height: 28px;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 /* // Blog */
 /* Responsive */
