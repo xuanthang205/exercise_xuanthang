@@ -283,6 +283,7 @@ input {
   font-size: 16px;
   color: #605f5f;
   line-height: 26px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .select .select_item.is_active .select_link {
