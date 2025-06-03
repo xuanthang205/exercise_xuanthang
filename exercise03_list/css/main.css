@@ -27,7 +27,8 @@
   scale: 1.1;
 }
 
-.blog_img_wrap {
+.blog_img_link {
+  display: block;
   overflow: hidden;
   position: relative;
   padding-top: 91.1215%;
@@ -54,7 +55,7 @@
   display: block;
 }
 
-.blog_link + .blog_link {
+.blog_link {
   margin: 24px 0 9px;
 }
 /* // Blog */
@@ -94,11 +95,6 @@
     row-gap: 12px;
   }
 
-  .blog .more_link {
-    align-self: flex-end;
-  }
-
-
   .blog_list {
     flex-direction: column;
   }
@@ -111,7 +107,7 @@
     margin: 24px 0 0;
   }
 
-  .blog_img_wrap {
+  .blog_img_link {
     padding-top: 90.997%;
   }
 

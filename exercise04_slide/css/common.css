@@ -90,6 +90,7 @@ input {
   letter-spacing: -0.4px;
   text-align: center;
   line-height: var(--height);
+  transition: opacity 0.3s ease;
   box-sizing: border-box;
 }
 
