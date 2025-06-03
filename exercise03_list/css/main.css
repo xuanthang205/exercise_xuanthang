@@ -1,10 +1,4 @@
 /* Blog */
-.blog_top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .blog_list {
   display: flex;
   margin-top: 40px;

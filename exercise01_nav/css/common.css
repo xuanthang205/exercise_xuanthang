@@ -90,11 +90,18 @@ input {
   letter-spacing: -0.4px;
   text-align: center;
   line-height: var(--height);
+  transition: opacity 0.3s ease;
   box-sizing: border-box;
 }
 
 .btn:hover {
   opacity: 0.8;
+}
+
+.section_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .icon {

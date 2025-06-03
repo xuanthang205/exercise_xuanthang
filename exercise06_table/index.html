@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-    <title>Form Assignment</title>
+    <title>Table Assignment</title>
     <link rel="stylesheet" type="text/css" href="./css/fonts.css">
     <link rel="stylesheet" type="text/css" href="./css/common.css">
     <link rel="stylesheet" type="text/css" href="./css/main.css">
@@ -52,40 +52,45 @@
                   </div>
                 </div>
               </div>
-              <form action="#none" class="form">
-                <h3 class="account_title">Account Details</h3>
-                <div class="input_wrap">
-                  <label for="first_name" class="label">First name *</label>
-                  <input type="text" id="first_name" name="first_name" placeholder="First name" class="input" required>
-                </div>
-                <div class="input_wrap">
-                  <label for="last_name" class="label">Last name *</label>
-                  <input type="text" id="last_name" name="last_name" placeholder="Last name" class="input" required>
-                </div>
-                <div class="input_wrap">
-                  <label for="display_name" class="label">Display name *</label>
-                  <input type="text" id="display_name" name="display_name" placeholder="Display name" class="input" required>
-                  <p class="account_note">This will be how your name will be displayed in the account section and in reviews</p>
-                </div>
-                <div class="input_wrap">
-                  <label for="email" class="label">Email *</label>
-                  <input type="text" id="email" name="email" placeholder="Email" class="input" required>
-                </div>
-                <h3 class="account_title">Password</h3>
-                <div class="input_wrap">
-                  <label for="old_password" class="label">Old password</label>
-                  <input type="password" id="old_password" name="old_password" placeholder="Old password" class="input" required>
-                </div>
-                <div class="input_wrap">
-                  <label for="new_password" class="label">New password</label>
-                  <input type="password" id="new_password" name="new_password" placeholder="New password" class="input" required>
-                </div>
-                <div class="input_wrap">
-                  <label for="repeat_password" class="label">Repeat new password</label>
-                  <input type="password" id="repeat_password" name="repeat_password" placeholder="Repeat new password" class="input" required>
-                </div>
-                <button type="submit" class="btn submit_btn">Save changes</button>
-              </form>
+              <div class="order_history">
+                <h3 class="title">Orders History</h3>
+                <table class="order_table">
+                  <thead>
+                    <tr>
+                      <th class="order_caption">Number ID</th>
+                      <th class="order_caption">Dates</th>
+                      <th class="order_caption">Status</th>
+                      <th class="order_caption">Price</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="order_row">
+                      <td class="order_text">#3456_768</td>
+                      <td class="order_text">October 17, 2023</td>
+                      <td class="order_text">Delivered</td>
+                      <td class="order_text">$1234.00</td>  
+                    </tr> 
+                    <tr class="order_row">
+                      <td class="order_text">#3456_980</td>
+                      <td class="order_text">October 11, 2023</td>
+                      <td class="order_text">Delivered</td>
+                      <td class="order_text">$345.00</td>
+                    </tr>
+                    <tr class="order_row">
+                      <td class="order_text">#3456_120</td>
+                      <td class="order_text">August 24, 2023</td>
+                      <td class="order_text">Delivered</td>
+                      <td class="order_text">$2345.00</td>  
+                    </tr> 
+                    <tr class="order_row">
+                      <td class="order_text">#3456_030</td>
+                      <td class="order_text">August 12, 2023</td>
+                      <td class="order_text">Delivered</td>
+                      <td class="order_text">$845.00</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </section>

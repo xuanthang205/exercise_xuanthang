@@ -1,4 +1,8 @@
 /* Product */
+.product{
+  overflow: hidden;
+}
+
 .product .inner {
   padding: 48px 0 52px;
 }
