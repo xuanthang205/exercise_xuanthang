@@ -24,45 +24,11 @@
   box-sizing: border-box;
 }
 
-.account .user_box {
-  position: relative;
-  width: 80px;
-  height: 80px;
-  margin: 0 auto;
-}
-
-.account .user_avatar {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.account .edit_btn {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 30px;
-  height: 30px;
-  border: 1.5px solid #fff;
-  border-radius: 50%;
-  background-color: #141718;
-  box-sizing: border-box;
-}
-
-.account .user_name {
-  margin-top: 8px;
-  font-weight: 600;
-  font-size: 20px;
-  text-align: center;
-  line-height: 32px;
-}
-
 .account .select_list {
   margin-top: 40px;
 }
 
-.account_form {
+.account .form {
   flex-grow: 1;
   margin-top: -40px;
   padding: 0 72px;
@@ -75,59 +41,13 @@
   line-height: 32px;
 }
 
-.account_input_wrap {
-  display: flex;
-  flex-direction: column;
-  margin-top: 24px;
-}
-
-.account_input {
-  display: block;
-  width: 100%;
-  height: 40px;
-  margin: 12px 0 0;
-  padding: 7px 16px;
-  border: 1px solid #cbcbcb;
-  border-radius: 6px;
-  font-size: 16px;
-  color: #141718;
-  outline: none;
-  box-sizing: border-box;
-}
-
-.account_input::placeholder {
-  font-family: 'Inter', sans-serif;
-  color: #6c7275;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-}
-
-.account_input:focus {
-  border-color: #141718;
-}
-
-.account_label {
-  display: inline-block;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 12px;
-  color: #6c7275;
-  text-transform: uppercase;
-}
-
 .account_note {
   margin-top: 12px;
   font-style: italic;
   font-size: 12px;
   color: #6c7275;
   line-height: 20px;
-}
-
-.account .submit_btn {
-  --height: 52px;
-  margin-top: 24px;
-  font-size: 16px;
+  user-select: none;  
 }
 /* // Form */
 /* Responsive */
@@ -157,7 +77,7 @@
   }
   /* Form */
   .account .inner {
-    padding-top: 16px;
+    padding-top: 8px;
   }
 
   .account_wrap {
@@ -167,7 +87,7 @@
   }
 
   .account .heading {
-    margin: 36px 0 0 -14px;
+    margin: 32px 0 0 -14px;
     font-size: 40px;
     line-height: 44px;
     letter-spacing: -0.4px;
@@ -177,7 +97,7 @@
     min-width: 100%;
   }
 
-  .account_form {
+  .account .form {
     padding: 0;
   }
 
@@ -188,6 +108,7 @@
   .back_btn {
     display: inline-flex;
     align-items: center;
+    padding: 8px 8px 8px 0;
     font-weight: 500;
     font-size: 14px;
     color: #605f5f;
@@ -198,7 +119,7 @@
     margin: 0 -2px 0 -6px;
   }
 
-  .account .select_list{
+  .account .select_list {
     margin-top: 0;
   }
   /* //Form */

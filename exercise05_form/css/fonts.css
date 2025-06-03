@@ -4,7 +4,6 @@
     src: url('../fonts/poppins/Poppins-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
-    font-display: swap;
 }
 
 @font-face {
@@ -12,7 +11,6 @@
     src: url('../fonts/poppins/Poppins-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
 
 @font-face {
@@ -20,7 +18,6 @@
     src: url('../fonts/poppins/Poppins-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
-    font-display: swap;
 }
 /* // Poppins */
 
@@ -30,7 +27,6 @@
     src: url('../fonts/inter/Inter-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
-    font-display: swap;
 }
 
 @font-face {
@@ -38,7 +34,6 @@
     src: url('../fonts/inter/Inter-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
-    font-display: swap;
 }
 
 @font-face {
@@ -46,7 +41,6 @@
     src: url('../fonts/inter/Inter-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
-    font-display: swap;
 }
 
 @font-face {
@@ -54,7 +48,6 @@
     src: url('../fonts/inter/Inter-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
 /* // Inter */
 
@@ -64,7 +57,6 @@
     src: url('../fonts/space-grotesk/SpaceGrotesk-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
-    font-display: swap;
 }
 
 @font-face {
@@ -72,7 +64,6 @@
     src: url('../fonts/space-grotesk/SpaceGrotesk-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
-    font-display: swap;
 }
 
 @font-face {
@@ -80,7 +71,6 @@
     src: url('../fonts/space-grotesk/SpaceGrotesk-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
 /* // Space grotesk */
 

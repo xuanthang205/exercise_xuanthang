@@ -3,11 +3,12 @@ const optionBtn = document.querySelector('.select .btn_option');
 const iconSelect = document.querySelector('.select .icon_arrow_down');
 const options = document.querySelector('.select_option');
 
+optionBtn.textContent = document.querySelector('.select_item.is_active .select_link').textContent;
+
 optionBtn.addEventListener('click', () => {
   options.classList.toggle('is_show');
   optionBtn.classList.toggle('is_show');
 });
-
 // Handling when selecting items
 selectItems.forEach(function (item) {
   item.addEventListener('click', function () {

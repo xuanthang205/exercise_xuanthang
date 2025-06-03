@@ -10,30 +10,28 @@
   --width: calc(100% - 64px);
   display: flex;
   align-items: center;
+  justify-content: space-between;
   max-width: min(1120px, var(--width));
   margin: 0 auto;
   padding: 14px 0;
-}
-
-.header_box {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex: 1;
 }
 
 .nav_list {
   display: flex;
 }
 
+.nav_item + .nav_item {
+  margin-left: 12px;
+}
+
 .nav_link {
   display: inline-block;
-  padding: 4px 20px;
+  padding: 4px 14px;
   font-family: 'Space Grotesk', sans-serif;
-  font-weight: 500;
   font-size: 14px;
-  line-height: 24px;
+  font-weight: 500;
   color: #6c7275;
+  line-height: 24px;
   transition: color 0.3s ease-in-out;
 }
 
@@ -78,13 +76,13 @@
   background-color: #141718;
   font-size: 12px;
   font-weight: 700;
-  line-height: 10px;
   color: #fff;
+  line-height: 10px;
   cursor: default;
 }
 
-.header .input_wrap:focus-within {
-  outline: 1px solid #000;
+.header.is_show .input_wrap:focus-within {
+  border-color: #000;
 }
 /* // Header styles */
 
@@ -93,7 +91,15 @@
   display: none;
 }
 
+.mobile_only {
+  display: none;
+}
+
 @media (max-width: 768px) {
+  .mobile_only {
+    display: block;
+  }
+
   .mobile_show {
     display: block;
   }
@@ -102,6 +108,14 @@
     display: none;
   }
   /* Header */
+  .nav_item + .nav_item {
+    margin-left: 0px;
+  }
+
+  .nav_link {
+    color: #141718;
+  }
+
   .header .logo_img {
     width: 70px;
   }
@@ -125,24 +139,19 @@
 
   .header.is_show {
     position: fixed;
-    z-index: 3;
     inset: 0 8.53333% 0 0;
+    z-index: 3;
     animation: moveInLeft 0.3s ease;
   }
 
   .header.is_show .header_area {
-    display: block;
-    height: 100%;
-    padding: 24px;
-    box-sizing: border-box;
-  }
-
-  .header.is_show .header_box {
     flex-direction: column;
     justify-content: initial;
     align-items: initial;
     height: 100%;
+    padding: 24px;
     background-color: #fff;
+    box-sizing: border-box;
   }
 
   .header.is_show .menu_btn {
@@ -181,8 +190,8 @@
     font-size: 14px;
     font-weight: 400;
     color: #6c7275;
-    line-height: 22px;
     letter-spacing: 0px;
+    line-height: 22px;
   }
 
   .header.is_show .nav {
@@ -200,8 +209,8 @@
     margin-top: 12px;
     padding: 10px 0;
     font-family: 'Inter', sans-serif;
-    font-weight: 500;
     font-size: 14px;
+    font-weight: 500;
     line-height: 24px;
     box-sizing: border-box;
   }
@@ -253,8 +262,8 @@
     font-size: 18px;
     font-weight: 500;
     color: #6c7275;
-    line-height: 32px;
     letter-spacing: -0.4px;
+    line-height: 32px;
   }
 
   .header.is_show .btn_signin {

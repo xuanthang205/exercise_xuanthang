@@ -1,4 +1,5 @@
 const ratings = document.querySelectorAll('.rating');
+console.log(ratings);
 
 function updateRatingValue(input) {
   input.style.setProperty('--value', input.valueAsNumber);
@@ -10,6 +11,7 @@ ratings.forEach((input, index) => {
   const savedValue = localStorage.getItem(key);
   if (savedValue !== null) {
     input.value = savedValue;
+    console.log(savedValue)
   }
   // Initial UI Update 
   updateRatingValue(input);

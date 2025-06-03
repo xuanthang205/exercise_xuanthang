@@ -24,7 +24,6 @@ const swiper = new Swiper('.product_slides', {
       spaceBetween: 24,
     },
   },
-  // And if we need scrollbar
   scrollbar: {
     el: '.swiper-scrollbar',
     draggable: true

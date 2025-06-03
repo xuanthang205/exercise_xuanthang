@@ -85,10 +85,11 @@ input {
   height: var(--height);
   border-radius: 8px;
   background-color: #141718;
+  font-size: 16px;
   font-weight: 500;
-  text-align: center;
   color: #fff;
   letter-spacing: -0.4px;
+  text-align: center;
   line-height: var(--height);
   box-sizing: border-box;
 }
@@ -227,11 +228,11 @@ input {
 
 .section_heading {
   font-family: 'Poppins', sans-serif;
-  font-weight: 500;
   font-size: 40px;
+  font-weight: 500;
   color: #000;
-  line-height: 44px;
   letter-spacing: -0.4px;
+  line-height: 44px;
 }
 
 .more_link {
@@ -239,9 +240,9 @@ input {
   flex-direction: row-reverse;
   align-items: center;
   position: relative;
+  height: 28px;
   font-weight: 500;
   color: #121212;
-  height: 28px;
   letter-spacing: -0.4px;
   box-sizing: border-box;
 }
@@ -267,30 +268,68 @@ input {
   margin: 0 -2px 0 -1px;
   background-position: -100px -26px;
 }
+
+/* Profile */
+.profile .profile_img {
+  position: relative;
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+}
+
+.profile .user_avatar {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile .edit_btn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+  border: 1.5px solid #fff;
+  border-radius: 50%;
+  background-color: #141718;
+  box-sizing: border-box;
+}
+
+.profile .user_name {
+  margin-top: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 32px;
+}
+/* // Profile */
+
 /* Select */
 .select .select_item {
   position: relative;
 }
 
-.select .select_item + .select_item{
+.select_item + .select_item {
   margin-top: 14px;
 }
 
-.select .select_link {
+.select_link {
   display: block;
   padding: 8px 0 6px;
-  font-weight: 600;
   font-size: 16px;
+  font-weight: 600;
   color: #605f5f;
   line-height: 26px;
   -webkit-tap-highlight-color: transparent;
 }
 
-.select .select_item.is_active .select_link {
+.select_item.is_active .select_link {
   color: #141718;
 }
 
-.select .select_item.is_active::after {
+.select_item.is_active::after {
   position: absolute;
   bottom: -2px;
   left: 0;
@@ -301,6 +340,56 @@ input {
   content: '';
 }
 /* // Select */
+
+/* Form */
+.form .input_wrap {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+.form .label {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  color: #6c7275;
+  text-transform: uppercase;
+}
+
+.form .input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin: 12px 0 0;
+  padding: 7px 16px;
+  border: 1px solid #cbcbcb;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #141718;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.form .input::placeholder {
+  font-family: 'Inter', sans-serif;
+  color: #6c7275;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.form .input:focus {
+  border-color: #141718;
+}
+
+.form .submit_btn {
+  --height: 52px;
+  margin-top: 24px;
+}
+
+/* // Form */
+
 .mobile_only {
   display: none;
 }
@@ -310,24 +399,24 @@ input {
     display: block;
   }
 
-  .select .btn_option,
-  .select_list {
-    border: 2px solid #6c7275;
-    border-radius: 8px;
-    background-color: #fff;
-    box-sizing: border-box;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 26px;
+  .select {
+    position: relative;
   }
-  
+
   .select .btn_option {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     height: 48px;
-    padding: 0 12px 0 16px;
+    padding: 0 12px 0 16px; 
+    border: 2px solid #6c7275;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    box-sizing: border-box;
   }
 
   .select .btn_option::after {
@@ -340,36 +429,60 @@ input {
     background-size: 251px 51px;
     background-position: -226px -1px;
     vertical-align: top;
+    transition: rotate 0.25s ease;
     box-sizing: border-box;
-    transition: rotate 0.2s ease;
     content: '';
   }
 
-  .select .btn_option.is_show::after{
+  .select .btn_option.is_show::after {
     rotate: 180deg;
   }
 
-  .select .select_option{
+  .select_option {
     overflow: hidden;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    width: 100%;
     max-height: 0;
-    transition: max-height 0.2s ease;
+    transition: max-height 0.25s ease;
   }
 
-  .select .select_option.is_show{
+  .select_option.is_show {
     max-height: 290px;
-    margin-top: 16px;
+    box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.1);
   }
 
-  .select .select_list{
-    padding: 8px 0;
+  .select_list {
+    padding: 8px;
+    border: 1.5px solid #f3f5f7;
+    border-radius: 12px;
+    background-color: #fff;
+    box-sizing: border-box;
   }
 
-  .select .select_item:hover{
-    background-color: #dfdfdf;
+  .select_item + .select_item{
+    margin-top: 10px;
   }
 
-  .select .select_link {
-    padding: 8px 16px;
+  .select_item:hover {
+    border-radius: 8px;
+    background-color: #f3f5f7;
+  }
+
+  .select_link {
+    padding: 8px;
+    font-weight: 400;
+    transition: font-weight 0.2s ease, color 0.2s ease;
+  }
+
+  .select_link:hover {
+    font-weight: 600;
+    color: #141718;
+  }
+
+  .select .select_item.is_active .select_link{
+    font-weight: 600;
   }
 
   .select .select_item.is_active::after {
@@ -388,7 +501,6 @@ input {
   --star-spacing: 2px;
   --symbol: var(--star);
   --value: 1;
-  /* --w: calc(var(--stars) * var(--star-size)); */
   --w: calc(var(--stars) * var(--star-size) + (var(--stars) - 1) * var(--star-spacing));
   --x: calc(100% * (var(--value) / var(--stars)));
   block-size: var(--star-size);
@@ -401,8 +513,6 @@ input {
 .rating::-webkit-slider-runnable-track {
   background: linear-gradient(to var(--dir), var(--fill) 0 var(--x), var(--fill-bg) 0 var(--x));
   block-size: 100%;
-  /* mask: repeat left center/var(--star-size) var(--symbol);
-  -webkit-mask: repeat left center/var(--star-size) var(--symbol); */
   mask: repeat left center/calc(var(--star-size) + var(--star-spacing)) var(--symbol);
   -webkit-mask: repeat left center/calc(var(--star-size) + var(--star-spacing)) var(--symbol);
 }

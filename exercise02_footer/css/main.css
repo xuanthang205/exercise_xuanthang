@@ -23,8 +23,8 @@
   max-width: 260px;
   margin-top: 25px;
   font-family: 'Poppins', sans-serif;
-  font-weight: 500;
   font-size: 20px;
+  font-weight: 500;
   color: #fefefe;
   line-height: 28px;
 }
@@ -50,6 +50,7 @@
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 500;
+  color: #fefefe;
   line-height: 24px;
   box-sizing: border-box;
 }
@@ -65,11 +66,11 @@
 }
 
 .footer_link {
-  display: block;
+  display: inline-block;
+  padding: 4px 0;
   font-size: 14px;
   color: #fff;
   line-height: 22px;
-  padding: 4px 0;
   box-sizing: border-box;
 }
 
@@ -92,10 +93,10 @@
 }
 
 .copyright_wrap {
-  margin-top: -1px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: -1px;
   padding: 32px 0;
 }
 
@@ -138,9 +139,9 @@
   display: inline-block;
   padding: 4px;
   font-size: 12px;
-  line-height: 20px;
-  text-align: right;
   color: #6c7275;
+  text-align: right;
+  line-height: 20px;
 }
 
 .legal_terms::before {
@@ -175,7 +176,15 @@
   display: none;
 }
 
+.mobile_only {
+  display: none;
+}
+
 @media (max-width: 768px) {
+  .mobile_only {
+    display: block;
+  }
+
   .mobile_show {
     display: block;
   }
@@ -235,6 +244,7 @@
   }
 
   .footer_link {
+    display: block;
     padding: 8px 0;
   }
 
@@ -247,15 +257,15 @@
   }
 
   .footer_list {
-    margin-top: 0;
-    max-height: 0;
     overflow: hidden;
+    max-height: 0;
+    margin-top: 0;
     transition: all 0.3s ease;
   }
 
   .footer_list.is_show {
-    max-height: 250px;
     overflow: visible;
+    max-height: 250px;
   }
 
   .footer .title {
@@ -273,8 +283,8 @@
     background-repeat: no-repeat;
     background-size: 226px 51px;
     background-position: -76px -26px;
-    transition: rotate 0.3s ease;
     rotate: 180deg;
+    transition: rotate 0.3s ease;
     content: '';
   }
 
@@ -307,8 +317,8 @@
   .legal_link {
     padding: 10px;
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
     font-size: 12px;
+    font-weight: 600;
     color: #fefefe;
   }
 
@@ -324,8 +334,8 @@
 
   .payment_list {
     justify-content: center;
-    width: 100%;
     gap: 4.6px;
+    width: 100%;
   }
   /* // Footer */
 }
