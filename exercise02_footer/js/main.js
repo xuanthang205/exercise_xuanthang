@@ -8,7 +8,7 @@ footerCols.forEach((col) => {
   const shouldToggle = titleText === 'Page' || titleText === 'Info';
   if (shouldToggle) {
     title.addEventListener('click', () => {
-      if (window.innerWidth <= 767.98) {
+      if (window.innerWidth <= 768) {
         title.classList.toggle('is_show');
         list.classList.toggle('is_show');
       }
@@ -21,7 +21,7 @@ let resizeTimeout;
 window.addEventListener('resize', () => {
   clearTimeout(resizeTimeout);
   resizeTimeout = setTimeout(() => {
-    if (window.innerWidth > 767.98) {
+    if (window.innerWidth > 768) {
       document.querySelectorAll('.footer_list.is_show, .footer_wrap .title.is_show').forEach((el) => el.classList.remove('is_show'));
     }
   }, 100); // 100ms delay to avoid lag

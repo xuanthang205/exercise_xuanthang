@@ -10,27 +10,16 @@
 
 .account_wrap {
   display: flex;
-  gap: 7px;
   margin-top: 80px;
 }
 
-.account_menu {
+.account_wrap .account_sidebar {
   align-self: flex-start;
-  flex-shrink: 0;
-  min-width: 262px;
-  padding: 40px 16px;
-  border-radius: 8px;
-  background-color: #f3f5f7;
-  box-sizing: border-box;
-}
-
-.account .select_list {
-  margin-top: 40px;
 }
 
 .account .form {
   flex-grow: 1;
-  margin-top: -40px;
+  margin: -40px 0 0 7px;
   padding: 0 72px;
 }
 
@@ -47,7 +36,7 @@
   font-size: 12px;
   color: #6c7275;
   line-height: 20px;
-  user-select: none;  
+  user-select: none;
 }
 /* // Form */
 /* Responsive */
@@ -55,7 +44,15 @@
   display: none;
 }
 
+.mobile_only {
+  display: none;
+}
+
 @media (max-width: 768px) {
+  .mobile_only {
+    display: block;
+  }
+
   .mobile_show {
     display: block;
   }
@@ -64,17 +61,6 @@
     display: none;
   }
 
-  .section_heading {
-    font-size: 34px;
-    line-height: 38px;
-    letter-spacing: -0.6px;
-  }
-
-  .more_link {
-    font-size: 14px;
-    height: 24px;
-    letter-spacing: 0px;
-  }
   /* Form */
   .account .inner {
     padding-top: 8px;
@@ -93,11 +79,8 @@
     letter-spacing: -0.4px;
   }
 
-  .account_menu {
-    min-width: 100%;
-  }
-
   .account .form {
+    margin-left: 0;
     padding: 0;
   }
 
@@ -105,7 +88,7 @@
     margin-top: 40px;
   }
 
-  .back_btn {
+  .btn_back {
     display: inline-flex;
     align-items: center;
     padding: 8px 8px 8px 0;
@@ -115,7 +98,7 @@
     line-height: 24px;
   }
 
-  .back_btn .icon_arrow_left {
+  .btn_back .icon_arrow_left {
     margin: 0 -2px 0 -6px;
   }
 

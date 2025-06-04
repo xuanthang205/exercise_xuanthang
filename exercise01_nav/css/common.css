@@ -70,14 +70,6 @@ input {
 /* // Animation */
 
 /* Common */
-.inner {
-  --width: calc(100% - 64px);
-  max-width: min(1120px, var(--width));
-  margin: 0 auto;
-  padding: 80px 0;
-  box-sizing: border-box;
-}
-
 .btn {
   --height: 46px;
   display: inline-block;
@@ -96,12 +88,6 @@ input {
 
 .btn:hover {
   opacity: 0.8;
-}
-
-.section_top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .icon {

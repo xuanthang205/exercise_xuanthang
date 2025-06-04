@@ -1,30 +1,40 @@
-const selectItems = document.querySelectorAll('.select .select_item');
-const optionBtn = document.querySelector('.select .btn_option');
-const iconSelect = document.querySelector('.select .icon_arrow_down');
-const options = document.querySelector('.select_option');
+const select = document.querySelector('.select');
+const optionBtn = select.querySelector('.btn_option');
+const options = select.querySelector('.select_option');
+const selectItems = select.querySelectorAll('.select_item');
+const activeItem = select.querySelector('.select_item.is_active');
 
-optionBtn.textContent = document.querySelector('.select_item.is_active .select_link').textContent;
+if (activeItem) {
+  optionBtn.textContent = activeItem.querySelector('.select_link').textContent;
+}
 
 optionBtn.addEventListener('click', () => {
   options.classList.toggle('is_show');
-  optionBtn.classList.toggle('is_show');
 });
-// Handling when selecting items
-selectItems.forEach(function (item) {
-  item.addEventListener('click', function () {
-    const selectedText = this.querySelector('.select_link').textContent;
-    // Remove old is_active
-    document.querySelector('.select .is_active')?.classList.remove('is_active');
-    // Assign new is_active
-    this.classList.add('is_active');
-    // Update main button content
+
+document.addEventListener('click', (e) => {
+  if (!select.contains(e.target)) {
+    optionBtn.classList.remove('is_show');
+    options.classList.remove('is_show');
+  }
+});
+
+selectItems.forEach((item) => {
+  item.addEventListener('click', () => {
+    const selectedText = item.querySelector('.select_link').textContent;
+
+    // Update active state
+    select.querySelector('.select_item.is_active')?.classList.remove('is_active');
+    item.classList.add('is_active');
+
+    // Update button text and close dropdown
     optionBtn.textContent = selectedText;
     optionBtn.classList.remove('is_show');
     options.classList.remove('is_show');
   });
 });
 
-window.addEventListener('resize', function () {
+window.addEventListener('resize', () => {
   if (window.innerWidth > 768) {
     optionBtn.classList.remove('is_show');
     options.classList.remove('is_show');

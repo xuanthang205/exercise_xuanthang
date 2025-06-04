@@ -38,7 +38,7 @@
 }
 
 .footer_wrap .col:not(:first-child) {
-  width: 14.286%;
+  width: 160px;
 }
 
 .footer_wrap .col + .col {
@@ -179,7 +179,6 @@
 .mobile_only {
   display: none;
 }
-
 @media (max-width: 768px) {
   .mobile_only {
     display: block;
