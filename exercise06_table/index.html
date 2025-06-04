@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <title>Table Assignment</title>
+    <link rel="stylesheet" type="text/css" href="./css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="./css/common.css" />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+  </head>
+
+  <body>
+    <div class="wrap">
+      <!-- Main -->
+      <main class="main">
+        <section class="account">
+          <div class="inner">
+            <h2 class="heading">My Account</h2>
+            <div class="account_wrap">
+              <div class="account_sidebar">
+                <div class="user">
+                  <div class="user_avatar">
+                    <img src="./images/user_avatar.jpg" alt="User avatar" class="user_img" />
+                    <label for="edit_img" class="btn_edit"></label>
+                    <input type="file" id="edit_img" name="edit_img" accept=".png, .jpg, .jpeg" hidden />
+                  </div>
+                  <h3 class="user_name">Sofia Havertz</h3>
+                </div>
+                <div class="select">
+                  <button type="button" aria-label="Select" class="btn_option mobile_only">Account</button>
+                  <div class="select_option">
+                    <ul class="select_list">
+                      <li class="select_item is_active">
+                        <a href="#none" class="select_link">Account</a>
+                      </li>
+                      <li class="select_item">
+                        <a href="#none" class="select_link">Address</a>
+                      </li>
+                      <li class="select_item">
+                        <a href="#none" class="select_link">Orders</a>
+                      </li>
+                      <li class="select_item">
+                        <a href="#none" class="select_link">Wishlist</a>
+                      </li>
+                      <li class="select_item">
+                        <a href="#none" class="select_link">Log Out</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="order_history">
+                <h3 class="title">Orders History</h3>
+                <table class="table">
+                  <caption class="blind">Order History</caption>
+                  <colgroup>
+                    <col style="width: 29.8%" />
+                    <col style="width: 24.3%" />
+                    <col style="width: 24.3%" />
+                    <col style="width: 21.6" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col">Number ID</th>
+                      <th scope="col">Dates</th>
+                      <th scope="col">Status</th>
+                      <th scope="col">Price</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>#3456_768</td>
+                      <td>October 17, 2023</td>
+                      <td>Delivered</td>
+                      <td>$1234.00</td>
+                    </tr>
+                    <tr>
+                      <td>#3456_980</td>
+                      <td>October 11, 2023</td>
+                      <td>Delivered</td>
+                      <td>$345.00</td>
+                    </tr>
+                    <tr>
+                      <td>#3456_120</td>
+                      <td>August 24, 2023</td>
+                      <td>Delivered</td>
+                      <td>$2345.00</td>
+                    </tr>
+                    <tr>
+                      <td>#3456_030</td>
+                      <td>August 12, 2023</td>
+                      <td>Delivered</td>
+                      <td>$845.00</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!--/ Main -->
+      <!-- Dimmed -->
+      <div class="dimmed"></div>
+      <!--/ Dimmed -->
+    </div>
+    <script src="./js/select.js"></script>
+  </body>
+</html>
