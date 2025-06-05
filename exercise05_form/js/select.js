@@ -9,6 +9,7 @@ if (activeItem) {
 }
 
 optionBtn.addEventListener('click', () => {
+  optionBtn.classList.toggle('is_show');
   options.classList.toggle('is_show');
 });
 
